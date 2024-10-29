@@ -2,8 +2,14 @@
   :root{
     --cor-de-fundo:#EBECEE;
     --branco:#FFFFFF;
-}
+    --laranja:#EB9B00;
+    --degrade: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,85,209,1) 38%, rgba(0,212,255,1) 100%);
+    --fonte-principal: "Poppins";
+  }
 body{
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size:16px;
+    font-weight: 400;
 
 }

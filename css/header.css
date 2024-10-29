@@ -12,7 +12,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; 
 }
 .container__imagem{
     padding: 1em;
+}
+.lista_menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60w;
+}
+
+.container_botao:checked~.lista_menu{
+    display:block;
+}
+
+.lista_menu_titulo,.lista_menu_item{
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.lista_menu_titulo{
+    color: var(--laranja);
+    font-weight: 700; 
+}
+.lista_menu_link{
+    background: var(--degrade);
+    -webkit-brackgorund-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.container__botao{
+    display: none;
+    
 }
